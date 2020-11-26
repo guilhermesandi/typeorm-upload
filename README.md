@@ -1,4 +1,4 @@
-<h1 align="center">Desafio: Conceitos do React Native | GoStack</h1>
+<h1 align="center">Desafio: Banco de dados e upload de arquivos no Node.js | GoStack</h1>
 
 <div align="center">
 
@@ -8,9 +8,7 @@
 
 ## Sobre
 
-Esse repositório contém um exemplo básico de utilização do Front-end com React Native. Nela utilizaremos o back-end disponível neste [repositório](https://github.com/guilhermesandi/conceitos-nodejs).
-Essa aplicação irá adicionar repositórios ao clicar no botão "Adicionar", e remover o repositório com o botão "Remover".
-O objetivo é adicionar e remover do back-end e do front-end sem atualizar a página.
+Essa será uma aplicação que deve armazenar transações financeiras de entrada e saída e permitir o cadastro e a listagem dessas transações, além de permitir a criação de novos registros no banco de dados a partir do envio de um arquivo csv.
 
 ## Como usar
 
