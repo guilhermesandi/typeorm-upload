@@ -7,12 +7,25 @@ import CreateTransactionService from '../services/CreateTransactionService';
 
 const transactionsRouter = Router();
 
+const transactionsRepository = new TransactionsRepository();
+
 transactionsRouter.get('/', async (request, response) => {
   // TODO
 });
 
 transactionsRouter.post('/', async (request, response) => {
-  // TODO
+  const { title, value, type, category } = request.body;
+
+  const createTransaction = new CreateTransactionService();
+
+  const transaction = await createTransaction.execute({
+    title,
+    value,
+    type,
+    category,
+  });
+
+  return response.json(transaction);
 });
 
 transactionsRouter.delete('/:id', async (request, response) => {
